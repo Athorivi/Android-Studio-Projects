@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kostas.dvt.dvt">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="20dp"
+        android:text="Active cancer" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="17dp"
+        android:text="Bedridden recently >3 days or major surgery within four weeks" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_below="@+id/textView10"
+        android:layout_marginTop="13dp"
+        android:text="Calf swelling >3 cm compared to the other leg" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/t3"
+        android:text="Collateral (nonvaricose) superficial veins present" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/t4"
+        android:layout_marginTop="19dp"
+        android:text="Entire leg swollen" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_below="@+id/t5"
+        android:text="Localized tenderness along the deep venous system" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView14"
+        android:layout_below="@+id/textView14"
+        android:text="Pitting edema, confined to symptomatic leg" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_below="@+id/textView15"
+        android:text="Paralysis, paresis, or recent plaster immobilization of the lower extremity" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_below="@+id/textView15"
+        android:layout_marginTop="69dp"
+        android:text="Previously documented DVT" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/textView17"
+        android:text="Alternative diagnosis to DVT as likely or more likely" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/logout"
+        android:layout_alignBottom="@+id/logout"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_marginStart="26dp"
+        android:onClick="save"
+        android:text="SAVE" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/t10"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@+id/textView18"
+        android:onClick="logout"
+        android:text="LOGOUT" />
+
+    <ToggleButton
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <ToggleButton
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignStart="@+id/t1"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <ToggleButton
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/t2"
+        android:layout_alignTop="@+id/textView11"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <ToggleButton
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/t3"
+        android:layout_alignTop="@+id/textView12"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <ToggleButton
+        android:id="@+id/t5"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignStart="@+id/t4"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <ToggleButton
+        android:id="@+id/t6"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/t5"
+        android:layout_below="@+id/t5"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <ToggleButton
+        android:id="@+id/t7"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/t6"
+        android:layout_below="@+id/t6"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <ToggleButton
+        android:id="@+id/t8"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/t7"
+        android:layout_below="@+id/t7"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <ToggleButton
+        android:id="@+id/t9"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/t8"
+        android:layout_below="@+id/t8"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+    <ToggleButton
+        android:id="@+id/t10"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/t9"
+        android:layout_below="@+id/t9"
+        android:text="ToggleButton"
+        android:textOff="No"
+        android:textOn="Yes" />
+
+</android.widget.RelativeLayout>

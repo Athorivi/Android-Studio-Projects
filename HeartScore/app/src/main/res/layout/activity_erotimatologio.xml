@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.efi.heartscore.erotimatologio">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="HEART SCORE"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView10"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="33dp"
+        android:text="History:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="49dp"
+        android:text="EKG:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView12"
+        android:layout_below="@+id/textView12"
+        android:layout_marginTop="52dp"
+        android:text="Age:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/it_spin"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginBottom="35dp"
+        android:text="Risk faktors:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignStart="@+id/textView13"
+        android:layout_marginBottom="57dp"
+        android:text="Initial troponin:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/history_spin"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/ekg_spin"
+        android:layout_alignTop="@+id/textView11" />
+
+    <Spinner
+        android:id="@+id/ekg_spin"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/age_spin"
+        android:layout_alignTop="@+id/textView12" />
+
+    <Spinner
+        android:id="@+id/age_spin"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/rf_spin"
+        android:layout_alignTop="@+id/textView13" />
+
+    <Spinner
+        android:id="@+id/rf_spin"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignStart="@+id/it_spin"
+        android:dropDownWidth="match_parent" />
+
+    <Spinner
+        android:id="@+id/it_spin"
+        android:layout_width="400dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/textView15"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/button2"
+        android:dropDownWidth="match_parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView15"
+        android:layout_marginBottom="72dp"
+        android:layout_marginStart="38dp"
+        android:onClick="save"
+        android:text="CALCULATE"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignStart="@+id/it_spin"
+        android:layout_marginStart="75dp"
+        android:onClick="logout"
+        android:text="LOGOUT"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</android.widget.RelativeLayout>
